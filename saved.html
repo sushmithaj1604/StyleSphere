@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Return to the fashion looks you have saved.">
+  <title>Saved Looks | Style Atelier</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topline">A little inspiration for your everyday style · Spring / Summer Edit</div>
+  <header class="header">
+    <a class="brand" href="index.html">STYLE<span>ATELIER</span></a>
+    <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="trends.html">Trends &amp; Collections</a>
+      <a href="designers.html">Designers &amp; Looks</a>
+      <a href="styling.html">Styling</a>
+      <a class="active" href="saved.html">Saved</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <span id="welcomeUser"></span>
+      <button id="logoutBtn" style="display:none;cursor:pointer;">Logout</button>
+    </nav>
+  </header>
+  <section class="page-intro">
+    <span class="eyebrow">Style Atelier · Your edit</span>
+    <h1>Saved looks</h1>
+    <p>Your favorite inspiration and styled outfits, gathered in one place on this device.</p>
+  </section>
+  <main class="section">
+    <div class="section-head"><div><span class="eyebrow">Your personal collection</span><h2>Looks to come back to</h2></div></div>
+    <p id="savedEmpty" class="saved-empty" hidden>You haven’t saved any looks yet. Explore the edits and tap “Save look” to add one here.</p>
+    <div class="cards" id="savedLooks" aria-live="polite"></div>
+    <nav class="page-navigation" aria-label="Inspiration navigation">
+      <a class="btn light" href="trends.html">← Browse Trends &amp; Collections</a>
+      <a class="btn" href="styling.html">Style a look →</a>
+    </nav>
+  </main>
+  <footer class="footer">
+    <div class="footer-top"><div><a class="brand" href="index.html">STYLE<span>ATELIER</span></a><p>A digital fashion studio for outfit inspiration and personal style.</p></div>
+      <div class="footer-links"><a href="trends.html">Trends &amp; Collections</a><a href="designers.html">Designers &amp; Looks</a><a href="styling.html">Styling</a><a href="saved.html">Saved</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="copyright">© 2026 STYLE ATELIER · MADE FOR THE LOVE OF STYLE</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

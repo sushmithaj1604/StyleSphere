@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore designer inspirations alongside the signature looks they create.">
+  <title>Designers &amp; Looks | Style Atelier</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topline">A little inspiration for your everyday style · Spring / Summer Edit</div>
+  <header class="header">
+    <a class="brand" href="index.html">STYLE<span>ATELIER</span></a>
+    <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="trends.html">Trends &amp; Collections</a>
+      <a class="active" href="designers.html">Designers &amp; Looks</a>
+      <a href="styling.html">Styling</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <span id="welcomeUser"></span>
+      <button id="logoutBtn" style="display:none;cursor:pointer;">Logout</button>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <span class="eyebrow">Style Atelier · Designers &amp; Looks</span>
+    <h1>Meet the minds behind the looks</h1>
+    <p>Discover designers and signature outfits together, with the details that make each look distinct.</p>
+  </section>
+
+  <main class="section">
+    <div class="section-head">
+      <div><span class="eyebrow">Creative visionaries</span><h2>Designer Looks</h2></div>
+      <input class="search" id="lookSearch" type="search" placeholder="Search designers and looks..." aria-label="Search designers and looks">
+    </div>
+    <div class="filters" aria-label="Filter designer looks">
+      <button class="filter active" data-filter="all">All Looks</button>
+      <button class="filter" data-filter="minimal">Minimal</button>
+      <button class="filter" data-filter="street">Streetwear</button>
+      <button class="filter" data-filter="romance">Couture</button>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-look-id="designer-armani" data-category="minimal" data-designer="Giorgio Armani" data-look-details="Relaxed power tailoring">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Giorgio Armani · Relaxed power tailoring</h3><p><strong>Designer:</strong> Giorgio Armani<br><strong>The look:</strong> Soft-shouldered tailoring, a fluid shirt, and muted tones create understated polish.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-virgil" data-category="street" data-designer="Virgil Abloh" data-look-details="Graphic street layers">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Virgil Abloh · Graphic street layers</h3><p><strong>Designer:</strong> Virgil Abloh<br><strong>The look:</strong> Graphic accents, relaxed proportions, and layered streetwear bring art into everyday dressing.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-dior" data-category="romance" data-designer="Christian Dior" data-look-details="Sculpted couture">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Christian Dior · Sculpted couture</h3><p><strong>Designer:</strong> Christian Dior<br><strong>The look:</strong> A defined waist, graceful volume, and refined finishing create a romantic couture silhouette.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-chanel" data-category="minimal" data-designer="Coco Chanel" data-look-details="Modern classic tweed">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Coco Chanel · Modern classic tweed</h3><p><strong>Designer:</strong> Coco Chanel<br><strong>The look:</strong> A neat jacket, clean lines, and restrained accessories make a timeless classic feel effortless.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-klein" data-category="minimal" data-designer="Calvin Klein" data-look-details="Clean monochrome">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Calvin Klein · Clean monochrome</h3><p><strong>Designer:</strong> Calvin Klein<br><strong>The look:</strong> Minimal shapes and a tonal palette let crisp proportions and fabric do the talking.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-wang" data-category="street" data-designer="Alexander Wang" data-look-details="Downtown utility">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Alexander Wang · Downtown utility</h3><p><strong>Designer:</strong> Alexander Wang<br><strong>The look:</strong> Urban layers, sharp contrasts, and practical details give off-duty dressing an edge.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-mccartney" data-category="minimal" data-designer="Stella McCartney" data-look-details="Considered tailoring">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Stella McCartney · Considered tailoring</h3><p><strong>Designer:</strong> Stella McCartney<br><strong>The look:</strong> Modern tailoring and thoughtful materials shape an easy, contemporary wardrobe.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-ralph" data-category="minimal" data-designer="Ralph Lauren" data-look-details="Polished weekend">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Ralph Lauren · Polished weekend</h3><p><strong>Designer:</strong> Ralph Lauren<br><strong>The look:</strong> Classic shirting, a tailored layer, and casual separates strike a relaxed preppy balance.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-valentino" data-category="romance" data-designer="Valentino Garavani" data-look-details="Romantic colour story">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Valentino Garavani · Romantic colour story</h3><p><strong>Designer:</strong> Valentino Garavani<br><strong>The look:</strong> Luminous colour, graceful movement, and a bold accessory bring drama to occasion dressing.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-tisci" data-category="street" data-designer="Riccardo Tisci" data-look-details="Street-meets-couture">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Riccardo Tisci · Street-meets-couture</h3><p><strong>Designer:</strong> Riccardo Tisci<br><strong>The look:</strong> Strong outerwear and refined details combine the energy of street style with couture attitude.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-elbaz" data-category="romance" data-designer="Alber Elbaz" data-look-details="Playful evening shape">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Alber Elbaz · Playful evening shape</h3><p><strong>Designer:</strong> Alber Elbaz<br><strong>The look:</strong> A sculptural dress and unexpected detail give eveningwear a joyful, personal character.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+      <article class="card" data-look-id="designer-miyake" data-category="minimal" data-designer="Issey Miyake" data-look-details="Architectural pleats">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Issey Miyake · Architectural pleats</h3><p><strong>Designer:</strong> Issey Miyake<br><strong>The look:</strong> Innovative texture and expressive volume turn a simple silhouette into wearable movement.</p><button class="save-btn" type="button">♡ Save look</button>
+      </article>
+    </div>
+    <nav class="page-navigation" aria-label="Inspiration navigation">
+      <a class="btn light" href="trends.html">← Back to Trends &amp; Collections</a><a class="btn" href="styling.html">Next: Style your look →</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><div><a class="brand" href="index.html">STYLE<span>ATELIER</span></a><p>A digital fashion studio for outfit inspiration and personal style.</p></div>
+      <div class="footer-links"><a href="trends.html">Trends &amp; Collections</a><a href="designers.html">Designers &amp; Looks</a><a href="styling.html">Styling</a><a href="saved.html">Saved</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="copyright">© 2026 STYLE ATELIER · MADE FOR THE LOVE OF STYLE</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

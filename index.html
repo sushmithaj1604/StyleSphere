@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Explore trends, build your style, and turn inspiration into a look that feels like you.">
+
+    <title>Home | Style Atelier</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="topline">
+        A little inspiration for your everyday style · Spring / Summer Edit
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a class="brand" href="index.html">
+            STYLE<span>ATELIER</span>
+        </a>
+
+        <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+
+        <nav class="nav">
+
+            <a class="active" href="index.html">Home</a>
+            <a href="trends.html">Trends</a>
+            <a href="collections.html">Collections</a>
+            <a href="designers.html">Designers</a>
+            <a href="lookbook.html">Lookbook</a>
+            <a href="styling.html">Styling</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+            <!-- LOGIN AND REGISTRATION -->
+
+            <a href="login.html" id="loginLink">Login</a>
+
+            <a href="register.html" id="registerLink">Register</a>
+
+            <!-- LOGGED-IN USER NAME -->
+
+            <span id="welcomeUser"></span>
+
+            <!-- LOGOUT BUTTON -->
+
+            <button
+                id="logoutBtn"
+                style="display:none; cursor:pointer;"
+            >
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-copy">
+
+                <span class="eyebrow">The new season edit</span>
+
+                <h1>
+                    Wear your<br>
+                    <em>own story.</em>
+                </h1>
+
+                <p>
+                    Explore trends, build your style, and turn inspiration
+                    into a look that feels like you. Discover a world of
+                    fashion, design, and personal expression.
+                </p>
+
+                <a class="btn" href="collections.html">
+                    Explore collections
+                </a>
+
+            </div>
+
+            <div
+                class="hero-image"
+                style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=85')"
+            ></div>
+
+        </section>
+
+
+        <!-- FASHION MOOD SECTION -->
+
+        <section class="section">
+
+            <div class="section-head">
+
+                <div>
+                    <span class="eyebrow">A curated point of view</span>
+                    <h2>Find your fashion mood</h2>
+                </div>
+
+                <a class="small-link" href="lookbook.html">
+                    View the lookbook
+                </a>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card" data-category="minimal" data-searchable>
+
+                    <div
+                        class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85')"
+                    ></div>
+
+                    <h3>Quiet luxury</h3>
+
+                    <p>Clean lines, soft tailoring, and timeless details.</p>
+
+                    <a class="small-link" href="lookbook.html">
+                        Explore look
+                    </a>
+
+                </article>
+
+
+                <article class="card" data-category="street" data-searchable>
+
+                    <div
+                        class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85')"
+                    ></div>
+
+                    <h3>Street-style energy</h3>
+
+                    <p>Relaxed layers with a confident point of view.</p>
+
+                    <a class="small-link" href="lookbook.html">
+                        Explore look
+                    </a>
+
+                </article>
+
+
+                <article class="card" data-category="romance" data-searchable>
+
+                    <div
+                        class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85')"
+                    ></div>
+
+                    <h3>Modern romance</h3>
+
+                    <p>Soft textures and silhouettes made to move.</p>
+
+                    <a class="small-link" href="lookbook.html">
+                        Explore look
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- BANNER SECTION -->
+
+        <section class="banner">
+
+            <div>
+
+                <span class="eyebrow">Your style, your rules</span>
+
+                <h2>Inspiration looks good on you.</h2>
+
+                <p>
+                    Explore a world of wearable ideas, thoughtful design,
+                    and details that make every outfit feel personal.
+                </p>
+
+            </div>
+
+            <a class="btn light" href="styling.html">
+                Read styling notes
+            </a>
+
+        </section>
+
+
+        <!-- EXPLORE ATELIER SECTION -->
+
+        <section class="section">
+
+            <div class="section-head">
+
+                <div>
+                    <span class="eyebrow">Explore the atelier</span>
+                    <h2>More to fall in love with</h2>
+                </div>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card" data-category="all" data-searchable>
+
+                    <div
+                        class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200&q=85')"
+                    ></div>
+
+                    <h3>Colour Studio</h3>
+
+                    <p>Build a palette that tells your story.</p>
+
+                    <a class="small-link" href="lookbook.html">
+                        Explore look
+                    </a>
+
+                </article>
+
+
+                <article class="card" data-category="all" data-searchable>
+
+                    <div
+                        class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1200&q=85')"
+                    ></div>
+
+                    <h3>Fabric Guide</h3>
+
+                    <p>Get to know the feel behind the fashion.</p>
+
+                    <a class="small-link" href="lookbook.html">
+                        Explore look
+                    </a>
+
+                </article>
+
+
+                <article class="card" data-category="all" data-searchable>
+
+                    <div
+                        class="card-image"
+                        style="background-image:url('https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85')"
+                    ></div>
+
+                    <h3>Bridal Couture</h3>
+
+                    <p>A fresh take on occasion dressing.</p>
+
+                    <a class="small-link" href="lookbook.html">
+                        Explore look
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div>
+
+                <a class="brand" href="index.html">
+                    STYLE<span>ATELIER</span>
+                </a>
+
+                <p>
+                    A digital fashion studio for outfit inspiration,
+                    design ideas, colour stories, and the little details
+                    that make personal style yours.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trends.html">Fashion Trends</a>
+                <a href="designers.html">Designers</a>
+                <a href="collections.html">Collections</a>
+                <a href="women.html">Women’s Fashion</a>
+                <a href="men.html">Men’s Fashion</a>
+                <a href="bridal.html">Bridal Couture</a>
+                <a href="streetwear.html">Streetwear</a>
+                <a href="sustainable.html">Sustainable Fashion</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="colour.html">Colour Studio</a>
+                <a href="fabrics.html">Fabric Guide</a>
+                <a href="sketchbook.html">Fashion Sketchbook</a>
+                <a href="styling.html">Styling Tips</a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="occasions.html">Occasion Wear</a>
+                <a href="blog.html">The Journal</a>
+                <a href="contact.html">Contact</a>
+                <a href="join.html">Join the Atelier</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 STYLE ATELIER · MADE FOR THE LOVE OF STYLE
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

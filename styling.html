@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personalize an outfit with styling, accessory, shoe, and finishing options.">
+  <title>Style Your Look | Style Atelier</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topline">A little inspiration for your everyday style · Spring / Summer Edit</div>
+  <header class="header">
+    <a class="brand" href="index.html">STYLE<span>ATELIER</span></a>
+    <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="trends.html">Trends &amp; Collections</a>
+      <a href="designers.html">Designers &amp; Looks</a>
+      <a class="active" href="styling.html">Styling</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <span id="welcomeUser"></span>
+      <button id="logoutBtn" style="display:none;cursor:pointer;">Logout</button>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <span class="eyebrow">Style Atelier · Styling Studio</span>
+    <h1>Make the look your own</h1>
+    <p>Choose styling options, accessories, shoes, and a finishing touch for your selected look.</p>
+  </section>
+
+  <main class="section">
+    <section class="style-builder-layout" aria-label="Customize your look">
+      <div>
+        <div class="selected-look-image" id="selectedLookImage" role="img" aria-label="Selected outfit preview"></div>
+        <span class="eyebrow">Your selected inspiration</span>
+        <h2 id="selectedLookTitle">Your style starts here</h2>
+        <p id="selectedLookDescription">Choose a look from Trends &amp; Collections or Designers &amp; Looks to personalize it here.</p>
+      </div>
+      <form class="style-options" data-style-builder>
+        <h2>Styling options</h2>
+        <label for="styleOption">Selected style</label>
+        <select id="styleOption" name="style">
+          <option value="minimal">Minimal</option>
+          <option value="street">Street</option>
+          <option value="romance">Romance</option>
+          <option value="all">Everyday</option>
+        </select>
+
+        <label for="outfitOption">Outfit pieces</label>
+        <select id="outfitOption" name="outfit">
+          <option>Tailored blazer and straight-leg trousers</option>
+          <option>Relaxed shirt with denim</option>
+          <option>Flowing dress with a light layer</option>
+          <option>Coordinated knit set</option>
+          <option>Statement jacket and wide-leg pants</option>
+        </select>
+
+        <label for="accessoryOption">Accessories</label>
+        <select id="accessoryOption" name="accessories">
+          <option>Structured shoulder bag and fine jewellery</option>
+          <option>Crossbody bag and layered chain</option>
+          <option>Clutch and delicate earrings</option>
+          <option>Leather belt and a silk scarf</option>
+          <option>Minimal tote and simple watch</option>
+        </select>
+
+        <label for="shoeOption">Shoes</label>
+        <select id="shoeOption" name="shoes">
+          <option>Classic loafers</option>
+          <option>Clean white sneakers</option>
+          <option>Strappy heels</option>
+          <option>Ankle boots</option>
+          <option>Simple ballet flats</option>
+        </select>
+
+        <label for="finishingOption">Other finishing options</label>
+        <select id="finishingOption" name="finishing">
+          <option>Soft neutral colour palette</option>
+          <option>One bold colour accent</option>
+          <option>Light layered outerwear</option>
+          <option>Statement sunglasses</option>
+          <option>Keep it relaxed and uncomplicated</option>
+        </select>
+
+        <button class="btn" type="submit">Save styled look</button>
+        <p id="styleSaveNotice" class="notice" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <nav class="page-navigation" aria-label="Inspiration navigation">
+      <a class="btn light" href="trends.html">← Back to Trends &amp; Collections</a>
+      <a class="btn" href="saved.html">View saved looks →</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><div><a class="brand" href="index.html">STYLE<span>ATELIER</span></a><p>A digital fashion studio for outfit inspiration and personal style.</p></div>
+      <div class="footer-links"><a href="trends.html">Trends &amp; Collections</a><a href="designers.html">Designers &amp; Looks</a><a href="styling.html">Styling</a><a href="saved.html">Saved</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="copyright">© 2026 STYLE ATELIER · MADE FOR THE LOVE OF STYLE</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

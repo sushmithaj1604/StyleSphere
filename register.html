@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Style Atelier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Style Atelier</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <h2>Join Style Atelier</h2>
+        <h3>Create Your Account</h3>
+
+        <form data-auth-form="register">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Create Password"
+                minlength="8"
+                required
+            >
+
+            <button type="submit">Create Account</button>
+
+            <p class="notice"></p>
+
+        </form>
+
+        <p>Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

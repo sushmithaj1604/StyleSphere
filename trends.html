@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore seasonal fashion trends and curated collections at Style Atelier.">
+  <title>Trends &amp; Collections | Style Atelier</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topline">A little inspiration for your everyday style · Spring / Summer Edit</div>
+  <header class="header">
+    <a class="brand" href="index.html">STYLE<span>ATELIER</span></a>
+    <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="trends.html">Trends &amp; Collections</a>
+      <a href="designers.html">Designers &amp; Looks</a>
+      <a href="styling.html">Styling</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="register.html" id="registerLink">Register</a>
+      <span id="welcomeUser"></span>
+      <button id="logoutBtn" style="display:none;cursor:pointer;">Logout</button>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <span class="eyebrow">Style Atelier · Trends &amp; Collections</span>
+    <h1>What’s inspiring the season</h1>
+    <p>Explore fresh trends and curated collections, then make every look your own.</p>
+  </section>
+
+  <main class="section">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Curated inspiration</span>
+        <h2>The Trends &amp; Collections Edit</h2>
+      </div>
+      <input class="search" id="lookSearch" type="search" placeholder="Search looks and ideas..." aria-label="Search looks">
+    </div>
+    <div class="filters" aria-label="Filter looks">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="minimal">Minimal</button>
+      <button class="filter" data-filter="street">Street</button>
+      <button class="filter" data-filter="romance">Romance</button>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-look-id="trend-art-of-simplicity" data-category="minimal">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>The art of simplicity</h3><p>Neutral tones, clean tailoring, and pieces that last.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-city-in-motion" data-category="street">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>City in motion</h3><p>Street-inspired layers and effortless confidence.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-soft-statement" data-category="romance">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Soft statement</h3><p>Fluid silhouettes with a romantic edge.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-after-hours" data-category="romance">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>After-hours elegance</h3><p>A striking look for a memorable evening.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-everyday-muse" data-category="minimal">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Everyday muse</h3><p>Easy pieces that still feel considered.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-modern-expression" data-category="street">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Modern expression</h3><p>Bold styling for your own point of view.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-modern-romance" data-category="romance">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Modern romance</h3><p>Delicate details and soft layers meet a fresh silhouette.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-weekend-canvas" data-category="street">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Weekend canvas</h3><p>Casual layers and denim made for unplanned days.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-quiet-structure" data-category="minimal">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Quiet structure</h3><p>Precise tailoring gives everyday essentials a polished finish.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-colour-in-bloom" data-category="romance">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Colour in bloom</h3><p>A lively palette brings a playful mood to graceful shapes.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-sunlit-essentials" data-category="minimal">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Sunlit essentials</h3><p>Lightweight staples and warm neutrals for brighter days.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+      <article class="card" data-look-id="trend-bold-energy" data-category="street">
+        <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=85')"></div>
+        <h3>Bold energy</h3><p>Expressive shapes and confident styling with a city edge.</p>
+        <div class="look-actions"><button class="save-btn" type="button">♡ Save look</button><button class="btn style-look-btn" type="button" data-style-look>Style this look</button></div>
+      </article>
+    </div>
+
+    <nav class="page-navigation" aria-label="Inspiration navigation">
+      <span></span><a class="btn" href="styling.html">Next: Style your look →</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><div><a class="brand" href="index.html">STYLE<span>ATELIER</span></a><p>A digital fashion studio for outfit inspiration and personal style.</p></div>
+      <div class="footer-links"><a href="trends.html">Trends &amp; Collections</a><a href="designers.html">Designers &amp; Looks</a><a href="styling.html">Styling</a><a href="saved.html">Saved</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="copyright">© 2026 STYLE ATELIER · MADE FOR THE LOVE OF STYLE</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
